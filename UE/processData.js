@@ -3,7 +3,7 @@ export function processData(data, codigo, clave, allData) {
   let valor = data.dataSets[0].series[`${codigo}`].observations;
   // Extrae las fechas 
   let fecha = data.structure.dimensions.observation[0].values;
-  console.log(fecha)
+  
   let valorArray = Object.entries(valor).reverse();
   // Invierte el array de fechas.
   fecha = fecha.reverse();
